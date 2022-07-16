@@ -1,0 +1,212 @@
+
+    /* body 样式 */
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;   /* 把li前面的圆点去掉 */
+}
+
+.nav{
+    background-color: #333;
+    height: 50px;
+}
+
+
+
+.first{
+    height: 50px;
+    background-color: #333;
+    display: inline-flex;
+    
+    
+    
+}
+
+.second{
+    margin: 0px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    
+}
+
+.second_1 a{
+    color: white;
+    z-index: 200;
+}
+
+
+
+.second:hover{
+    background-color: black;
+    z-index: 200;
+
+}
+
+ .third{
+    display: none;
+    background-color: gray;
+}
+
+
+.second:hover .third {
+    display: block;
+    z-index: 200;
+}
+
+
+.third_1:hover{
+    background-color: black;
+    z-index: 200;
+    
+
+}
+
+
+
+
+    .main-header {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      margin-bottom: 30px;
+      font-size: 24px;
+      text-align: left;
+      background-color: #6f5499;
+    }
+
+    .main-header h1 {
+      margin-top: 0;
+      color: #fff;
+      
+      z-index: 20;
+    }
+
+    .words-pannel {
+      margin-top: 10px;
+      z-index: 20;
+    }
+
+    .avatar {
+      height: 48px;
+      width: 48px;
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: middle;
+      border-radius: 10px;
+      float: left;
+      margin-right: 18px;
+      cursor: default;
+    }
+
+
+
+
+    .index-content {
+      margin-bottom: 20px;
+      padding: 50px 0px;
+      z-index: 30;
+
+    }
+
+    .index-content .row {
+      margin-top: 20px;
+    }
+
+    .index-content a {
+      color: black;
+      z-index: 40;
+    }
+
+    .index-content .card {
+      background-color: #FFFFFF;
+      padding: 0;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+
+      z-index: 50;
+    }
+
+    .index-content .card:hover {
+      box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+      color: black;
+    }
+
+    .index-content .card img {
+      width: 100%;
+      height: 256px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+
+    .index-content .card h4 {
+      margin: 20px;
+    }
+
+    .index-content .card p {
+      margin: 20px;
+      opacity: 0.65;
+    }
+
+    .index-content .blue-button {
+      width: 100px;
+      -webkit-transition: background-color 1s, color 1s;
+      /* For Safari 3.1 to 6.0 */
+      transition: background-color 1s, color 1s;
+      min-height: 20px;
+      background-color: #002E5B;
+      color: #ffffff;
+      border-radius: 4px;
+      text-align: center;
+      font-weight: lighter;
+      margin: 0px 20px 15px 20px;
+      padding: 5px 0px;
+      display: inline-block;
+    }
+
+    .index-content .blue-button:hover {
+      background-color: #dadada;
+      color: #002E5B;
+    }
+
+    @media (max-width: 768px) {
+
+      .index-content .col-lg-4 {
+        margin-top: 20px;
+      }
+    }
+
+
+
+    /* 底部 */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+    }
+
+    /* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    /* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
